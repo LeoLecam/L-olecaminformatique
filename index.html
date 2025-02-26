@@ -3,41 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Entreprise</title>
+    <title>Léo Le Cam - Informatique</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+            background-color: #0a192f;
+            color: white;
         }
         header {
-            background: #007bff;
+            background: linear-gradient(90deg, #007bff, #0056b3);
             color: white;
             padding: 20px;
-            font-size: 24px;
+            text-align: center;
+            font-size: 28px;
         }
-        section {
-            padding: 50px;
+        nav {
+            background: #003366;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007bff;
+        nav a {
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            font-size: 18px;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .services {
+            background: #112240;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
             margin-top: 20px;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
-    <header>Bienvenue sur le site de Mon Entreprise</header>
-    <section>
-        <h1>À propos de nous</h1>
-        <p>Nous offrons des services professionnels pour répondre à vos besoins.</p>
-        <a href="#" class="btn">Contactez-nous</a>
+    <header>
+        Léo Le Cam - Informatique
+    </header>
+    
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="accueil" class="section">
+        <h1>Présentation</h1>
+        <p>💻 Technicien en Informatique | Le Mans</p>
+        <p>Réparation, installation, optimisation et conseils en informatique.</p>
     </section>
+    
+    <section id="services" class="section">
+        <h1>Nos Services</h1>
+        <div class="services">
+            <h2>Réparation & Dépannage</h2>
+            <p>PC, Mac, logiciels, pannes diverses - À partir de 30€</p>
+        </div>
+        <div class="services">
+            <h2>Installation & Configuration</h2>
+            <p>Windows, macOS, logiciels, imprimantes - À partir de 40€</p>
+        </div>
+        <div class="services">
+            <h2>Maintenance & Optimisation</h2>
+            <p>Amélioration des performances, nettoyage de virus - À partir de 35€</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h1>Contact</h1>
+        <p>Email : leo.informatique.pro72@gmail.com</p>
+        <p>Téléphone : 06 17 70 95 91</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61573779565218"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/leolecaminformatique/"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/léo-le-cam-077376353/"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2024 Léo Le Cam - Informatique - Tous droits réservés
+    </footer>
 </body>
 </html>
